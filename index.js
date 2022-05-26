@@ -12,14 +12,14 @@ const firstUser = {
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: setColorMonica,
+    favoriteColor: [...setColorMonica],
     isHavePet: "Yes",
     education: [
         {name: "SD 01",  city: "Jakarta",  graduate: 2016},
         {name: "SMP 02", city: "Jakarta", graduate: 2019},
         {name: "SMA 03", city: "Tangerang"}
     ],
-    favoriteRestaurant: setRestaurantMonica,
+    favoriteRestaurant: [...setRestaurantMonica],
 };
 
 const arrColorWendy = ["Blue", "Black", "Grey"];
@@ -46,6 +46,8 @@ const secondUser = {
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
+
+console.log(users)
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
